@@ -51,7 +51,7 @@ export function LegalLayout({
 }) {
   return (
     <main className="site-shell min-h-screen">
-      <header className="border-b border-border/60">
+      <header className="sticky top-0 z-20 border-b border-border/60 bg-background/85 backdrop-blur">
         <div className="site-container flex h-[88px] items-center justify-between">
           <Link to="/" className="flex items-center">
             <BrandMark />

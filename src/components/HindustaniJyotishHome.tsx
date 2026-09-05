@@ -100,7 +100,7 @@ function Navigation({
   ];
 
   return (
-    <header className="absolute inset-x-0 top-0 z-20">
+    <header className="sticky inset-x-0 top-0 z-20 border-b border-border/60 bg-background/85 backdrop-blur">
       <div className="site-container flex h-[88px] items-center justify-between">
         <button
           className="flex items-center text-left"
@@ -181,7 +181,7 @@ function Navigation({
 
 function Hero() {
   return (
-    <section id="top" className="starfield relative min-h-[780px] border-b border-border/60 pt-28">
+    <section id="top" className="starfield relative min-h-[780px] border-b border-border/60">
       <div className="pointer-events-none absolute left-1/2 top-10 h-[560px] w-[560px] -translate-x-1/2 rounded-full bg-primary/10 blur-[100px]" />
       <div className="site-container relative grid items-center gap-12 pb-24 pt-14 lg:grid-cols-[0.92fr_1.08fr] lg:gap-10 lg:pt-20">
         <div className="max-w-xl">
