@@ -1,5 +1,5 @@
 import { useState, type FormEvent, type ReactNode } from "react";
-import { ArrowRight, Check, Menu, Sparkles, X } from "lucide-react";
+import { ArrowRight, Check, Menu, MessageCircle, Phone, Sparkles, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const benefits = [
@@ -70,6 +70,7 @@ export function HindustaniJyotishHome() {
       <Registration />
       <Support />
       <Footer />
+      <SiteFooter />
     </main>
   );
 }
@@ -641,6 +642,78 @@ function Footer() {
         <p className="mt-14 text-xs text-muted-foreground">
           © 2026 Hindustani Jyotish. Built with devotion.
         </p>
+      </div>
+    </footer>
+  );
+}
+
+function SiteFooter() {
+  return (
+    <footer className="border-t border-border/60 bg-background">
+      <div className="site-container grid gap-10 py-16 md:grid-cols-[1.3fr_1fr_1fr]">
+        <div>
+          <div className="flex items-center gap-2.5">
+            <span className="grid h-8 w-8 place-items-center rounded-md bg-card text-[9px] font-bold leading-none text-primary">
+              JYOTISH
+            </span>
+            <span className="display-serif text-lg text-primary">Hindustani Jyotish</span>
+          </div>
+          <p className="mt-4 max-w-xs text-sm leading-6 text-muted-foreground">
+            India&apos;s next premium astrology platform — built by the team behind Jyotishi Online.
+          </p>
+          <div className="mt-5 flex flex-col gap-2 text-sm">
+            <a href="https://jyotishionline.com" className="text-primary hover:underline">
+              👉 A product by the creators of Jyotishi Online
+            </a>
+            <p className="text-primary">
+              👉 Powered by Completely Different (Mumbai &amp; Bangkok)
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <p className="text-sm font-semibold text-foreground">Company</p>
+          <ul className="mt-4 flex flex-col gap-3 text-sm text-muted-foreground">
+            <li>
+              <button onClick={() => scrollToSection("about")} className="hover:text-primary">
+                About Us
+              </button>
+            </li>
+            <li>
+              <button onClick={() => scrollToSection("contact")} className="hover:text-primary">
+                Contact
+              </button>
+            </li>
+            <li>
+              <a href="/privacy" className="hover:text-primary">
+                Privacy Policy
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <p className="text-sm font-semibold text-foreground">Support</p>
+          <ul className="mt-4 flex flex-col gap-3 text-sm text-muted-foreground">
+            <li>
+              <a href="tel:8693869869" className="flex items-center gap-2 hover:text-primary">
+                <Phone size={15} className="text-primary" /> 869-3-869-869
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://wa.me/918693869869"
+                className="flex items-center gap-2 hover:text-primary"
+              >
+                <MessageCircle size={15} className="text-primary" /> WhatsApp Support
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="border-t border-border/60 py-5 text-center text-xs text-muted-foreground">
+        © 2026 Hindustani Jyotish. All rights reserved.
       </div>
     </footer>
   );
