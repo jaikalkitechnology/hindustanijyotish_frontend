@@ -73,23 +73,29 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Hindustani Jyotish | Astrology Platform" },
+      { title: "Hindustani Jyotish — India's Premium Astrology Platform for Astrologers" },
       {
         name: "description",
         content:
-          "A trusted astrology platform connecting verified astrologers with clients across India.",
+          "Apply as an astrologer on Hindustani Jyotish — built by the Jyotishi Online Kerala team. Instant chat, voice & video consultations across India.",
       },
       { name: "author", content: "Hindustani Jyotish" },
-      { property: "og:title", content: "Hindustani Jyotish | Astrology Platform" },
+      { property: "og:title", content: "Hindustani Jyotish — Apply as Astrologer" },
       {
         property: "og:description",
         content:
-          "A trusted astrology platform connecting verified astrologers with clients across India.",
+          "Join India's next premium astrology platform. Verified clients, flexible hours, high earnings. From the makers of Jyotishi Online.",
       },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:card", content: "summary" },
     ],
     links: [
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap",
+      },
       {
         rel: "stylesheet",
         href: appCss,

@@ -141,7 +141,7 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
-    font-family: "Work Sans", ui-sans-serif, system-ui, sans-serif;
+    font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
     margin: 0;
   }
 }
@@ -159,7 +159,7 @@
   }
 
   .display-serif {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
     letter-spacing: -0.02em;
   }
 

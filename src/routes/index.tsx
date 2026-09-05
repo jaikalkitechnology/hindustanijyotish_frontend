@@ -4,19 +4,20 @@ import { HindustaniJyotishHome } from "@/components/HindustaniJyotishHome";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Hindustani Jyotish | India’s Next Astrology Platform" },
+      { title: "Hindustani Jyotish — India's Premium Astrology Platform for Astrologers" },
       {
         name: "description",
         content:
-          "Join Hindustani Jyotish and connect with thousands of astrology seekers across India.",
+          "Apply as an astrologer on Hindustani Jyotish — built by the Jyotishi Online Kerala team. Instant chat, voice & video consultations across India.",
       },
-      { property: "og:title", content: "Hindustani Jyotish | India’s Next Astrology Platform" },
+      { property: "og:title", content: "Hindustani Jyotish — Apply as Astrologer" },
       {
         property: "og:description",
-        content: "A trusted platform for astrologers to build, connect, and grow.",
+        content:
+          "Join India's next premium astrology platform. Verified clients, flexible hours, high earnings. From the makers of Jyotishi Online.",
       },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:card", content: "summary" },
     ],
   }),
   component: HindustaniJyotishHome,
