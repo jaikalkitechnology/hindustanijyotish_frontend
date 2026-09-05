@@ -59,9 +59,7 @@ export function BrandLogo({ className }: { className?: string }) {
 export function BrandMark({ className }: { className?: string }) {
   return (
     <span className={`flex items-center gap-2.5 ${className ?? ""}`}>
-      <span className="grid h-9 w-9 shrink-0 place-items-center rounded-md border border-primary/30 bg-card">
-        <PennantMark className="h-5 w-5 text-primary" />
-      </span>
+      <img src="/images/logo-mark.png" alt="Hindustani Jyotish" className="h-10 w-auto shrink-0" />
       <span className="display-serif text-lg text-primary">Hindustani Jyotish</span>
     </span>
   );
