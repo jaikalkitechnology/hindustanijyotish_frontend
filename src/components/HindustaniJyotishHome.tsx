@@ -230,7 +230,7 @@ function Credibility() {
           <div className="absolute -inset-3 rounded-2xl border border-primary/25" />
           <img
             src="/images/hero-astrologer1-e3vDAjDp.jpg"
-            alt="Sacred Vedic astrology environment"
+            alt="Invitation for experienced astrologers to join Hindustani Jyotish, with WhatsApp and website contact details"
             className="relative aspect-[4/5] w-full rounded-xl object-cover opacity-90"
           />
         </div>
@@ -327,7 +327,7 @@ function Benefits() {
           <div className="absolute -inset-4 bg-primary/10 blur-3xl" />
           <img
             src="/images/spiritual-scene1-BiLDdiyU.jpg"
-            alt="Indian female astrologer doing a video consultation"
+            alt="Experienced astrologer? Join Hindustani Jyotish — no binding, flexible hours, earn by consulting online"
             className="relative aspect-[4/5] w-full rounded-2xl border border-primary/30 object-cover"
           />
         </div>
