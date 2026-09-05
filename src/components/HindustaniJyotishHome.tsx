@@ -46,7 +46,7 @@ function PennantMark({ className }: { className?: string }) {
   );
 }
 
-function BrandLogo({ className }: { className?: string }) {
+export function BrandLogo({ className }: { className?: string }) {
   return (
     <span className={`flex flex-col items-center leading-none ${className ?? ""}`}>
       <PennantMark className="mb-1 h-4 w-4 text-primary" />
@@ -647,7 +647,7 @@ function Footer() {
   );
 }
 
-function SiteFooter() {
+export function SiteFooter() {
   return (
     <footer className="border-t border-border/60 bg-background">
       <div className="site-container grid gap-10 py-16 md:grid-cols-[1.3fr_1fr_1fr]">
@@ -687,6 +687,16 @@ function SiteFooter() {
             <li>
               <a href="/privacy" className="hover:text-primary">
                 Privacy Policy
+              </a>
+            </li>
+            <li>
+              <a href="/terms" className="hover:text-primary">
+                Terms &amp; Conditions
+              </a>
+            </li>
+            <li>
+              <a href="/astrologer-terms" className="hover:text-primary">
+                Astrologer Terms
               </a>
             </li>
           </ul>
