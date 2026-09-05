@@ -22,6 +22,40 @@ function scrollToSection(id: string) {
   document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
 }
 
+function PennantMark({ className }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.4"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+      aria-hidden="true"
+    >
+      <circle cx="12" cy="3.6" r="1.1" fill="currentColor" stroke="none" />
+      <path d="M12 5v7" />
+      <path
+        d="M12 6.6c2.1-1.5 4.3-1.5 6 0-1.1 2-3.2 2.8-6 1.7z"
+        fill="currentColor"
+        stroke="none"
+        opacity="0.9"
+      />
+    </svg>
+  );
+}
+
+function BrandLogo({ className }: { className?: string }) {
+  return (
+    <span className={`flex flex-col items-center leading-none ${className ?? ""}`}>
+      <PennantMark className="mb-1 h-4 w-4 text-primary" />
+      <span className="display-serif text-sm italic text-primary">hindustani</span>
+      <span className="text-lg font-bold tracking-[0.2em] text-primary">JYOTISH</span>
+    </span>
+  );
+}
+
 export function HindustaniJyotishHome() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -59,14 +93,11 @@ function Navigation({
     <header className="absolute inset-x-0 top-0 z-20">
       <div className="site-container flex h-[88px] items-center justify-between">
         <button
-          className="flex items-center gap-3 text-left"
+          className="flex items-center text-left"
           onClick={() => scrollToSection("top")}
           aria-label="Go to top"
         >
-          <span className="grid h-9 w-9 place-items-center rounded-full border border-primary/40 text-primary">
-            <Sparkles size={15} />
-          </span>
-          <span className="display-serif text-lg text-primary">Hindustani Jyotish</span>
+          <BrandLogo />
         </button>
 
         <nav className="hidden items-center gap-8 md:flex">
