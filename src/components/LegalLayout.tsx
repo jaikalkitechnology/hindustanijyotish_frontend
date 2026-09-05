@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { BrandLogo, SiteFooter } from "@/components/HindustaniJyotishHome";
+import { BrandMark, SiteFooter } from "@/components/HindustaniJyotishHome";
 
 export type LegalBlock =
   { type: "p"; text: string } | { type: "heading"; text: string } | { type: "ul"; items: string[] };
@@ -54,7 +54,7 @@ export function LegalLayout({
       <header className="border-b border-border/60">
         <div className="site-container flex h-[88px] items-center justify-between">
           <Link to="/" className="flex items-center">
-            <BrandLogo />
+            <BrandMark />
           </Link>
           <Link to="/" className="text-sm text-muted-foreground hover:text-primary">
             ← Back to Home

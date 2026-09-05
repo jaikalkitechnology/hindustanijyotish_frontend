@@ -56,6 +56,17 @@ export function BrandLogo({ className }: { className?: string }) {
   );
 }
 
+export function BrandMark({ className }: { className?: string }) {
+  return (
+    <span className={`flex items-center gap-2.5 ${className ?? ""}`}>
+      <span className="grid h-8 w-8 place-items-center rounded-md bg-card text-[9px] font-bold leading-none text-primary">
+        JYOTISH
+      </span>
+      <span className="display-serif text-lg text-primary">Hindustani Jyotish</span>
+    </span>
+  );
+}
+
 export function HindustaniJyotishHome() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -98,7 +109,7 @@ function Navigation({
           onClick={() => scrollToSection("top")}
           aria-label="Go to top"
         >
-          <BrandLogo />
+          <BrandMark />
         </button>
 
         <nav className="hidden items-center gap-8 md:flex">
@@ -652,12 +663,7 @@ export function SiteFooter() {
     <footer className="border-t border-border/60 bg-background">
       <div className="site-container grid gap-10 py-16 md:grid-cols-[1.3fr_1fr_1fr]">
         <div>
-          <div className="flex items-center gap-2.5">
-            <span className="grid h-8 w-8 place-items-center rounded-md bg-card text-[9px] font-bold leading-none text-primary">
-              JYOTISH
-            </span>
-            <span className="display-serif text-lg text-primary">Hindustani Jyotish</span>
-          </div>
+          <BrandMark />
           <p className="mt-4 max-w-xs text-sm leading-6 text-muted-foreground">
             India&apos;s next premium astrology platform — built by the team behind Jyotishi Online.
           </p>
