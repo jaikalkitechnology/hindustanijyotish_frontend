@@ -14,6 +14,14 @@ export default defineConfig({
     tailwindcss(),
     tanstackStart({
       server: { entry: "server" },
+      spa: {
+        enabled: true,
+        prerender: {
+          enabled: true,
+          crawlLinks: true,
+          outputPath: "/index",
+        },
+      },
     }),
     viteReact(),
     nitro(),
