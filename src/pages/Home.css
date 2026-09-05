@@ -1,0 +1,127 @@
+.hero {
+  padding: 80px 0;
+  background: radial-gradient(circle at 80% 20%, rgba(245, 185, 66, 0.12), transparent 55%);
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  align-items: center;
+  gap: 40px;
+}
+
+.eyebrow {
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.hero h1 {
+  font-size: 2.75rem;
+  line-height: 1.15;
+  margin: 0 0 20px;
+}
+
+.hero-lead {
+  color: var(--color-text-muted);
+  font-size: 1.1rem;
+  max-width: 520px;
+  margin-bottom: 28px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.hero-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-orb {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #3a2a86, #170f3d 70%);
+  border: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  color: var(--color-primary);
+  box-shadow: 0 0 80px rgba(245, 185, 66, 0.15);
+}
+
+.section-alt {
+  background: var(--color-bg-alt);
+}
+
+.service-card {
+  text-align: left;
+}
+
+.service-icon {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.service-card h3 {
+  margin: 0 0 8px;
+}
+
+.service-card p {
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.step-card {
+  text-align: center;
+  padding: 12px;
+}
+
+.step-number {
+  display: inline-block;
+  font-weight: 700;
+  color: var(--color-primary);
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.step-card p {
+  color: var(--color-text-muted);
+}
+
+.testimonial-card p {
+  font-style: italic;
+  color: var(--color-text-muted);
+  margin-bottom: 16px;
+}
+
+.cta-section {
+  text-align: center;
+}
+
+.cta-inner p {
+  color: var(--color-text-muted);
+  margin-bottom: 24px;
+}
+
+@media (max-width: 860px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-visual {
+    order: -1;
+  }
+
+  .hero h1 {
+    font-size: 2.1rem;
+  }
+}
