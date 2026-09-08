@@ -658,9 +658,7 @@ export function SiteFooter() {
             {t.siteFooter.tagline}
           </p>
           <div className="mt-5 flex flex-col gap-2 text-sm">
-            <a href="https://jyotishionline.com" className="text-primary hover:underline">
-              {t.siteFooter.product}
-            </a>
+            <p className="text-primary">{t.siteFooter.product}</p>
             <p className="text-primary">{t.siteFooter.poweredBy}</p>
           </div>
         </div>
